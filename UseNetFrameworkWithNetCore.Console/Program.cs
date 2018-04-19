@@ -12,7 +12,12 @@ namespace UseNetFrameworkWithNetCore.ConsoleApp
             int[] array = new[] { 1, 4, 3, 2 };
 
             List<int> set = new List<int>(array);
-            //OrderedSet<int> set = new OrderedSet<int>()
+
+            #region PowerCollections
+
+            //Wintellect.PowerCollections.OrderedSet<int> set = new Wintellect.PowerCollections.OrderedSet<int>(array);
+
+            #endregion
 
             set.ForEach(item => Console.WriteLine(item));
 
